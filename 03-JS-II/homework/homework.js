@@ -4,14 +4,25 @@ function obtenerMayor(x, y) {
   // "x" e "y" son números enteros (int).
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
-  // Tu código:
+  // Tu código:a
+  if(x>y){
+    return x;
+  }
+  return y;
+
 }
+obtenerMayor(4,5);
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
+  if(edad >= 18){
+    return "Allowed"
+  }
+  return "Not allowed";
 }
+mayoriaDeEdad(22);
   
 function conection(status) {
   //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
@@ -19,7 +30,17 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
+  if(status === 1){
+    return "Online";
+  }else if(status === 2){
+    return "Away";
+  }else{
+    return "Offline";
+  }
+  
+
 }
+ 
 
 function saludo(idioma) {
   // Devuelve un saludo en tres diferentes lenguajes:
